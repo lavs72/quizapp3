@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz">
+        <h1>Interactive Quiz</h1>
+        <button class="section-btn" onclick="openSection(1)">Section 1</button>
+        <button class="section-btn" onclick="openSection(2)">Section 2</button>
+        <button class="section-btn" onclick="openSection(3)">Section 3</button>
+        <button class="section-btn" onclick="openSection(4)">Section 4</button>
+        <button class="section-btn" onclick="openSection(5)">Section 5</button>
+        <button class="section-btn" onclick="openSection(6)">Section 6</button>
+
+        
+            <!-- Section 1 Questions and Options -->
+            <div id="section1" class="quiz-section">
+                <h2>Section 1: Multiple Choice</h2>
+                <p>Question 1: What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="a"> a) London</label>
+                <label><input type="radio" name="q1" value="b"> b) Berlin</label>
+                <label><input type="radio" name="q1" value="c"> c) Paris</label><br><br>
+            
+                <p>Question 2: Which of the following is a mammal?</p>
+                <label><input type="radio" name="q2" value="a"> a) Snake</label>
+                <label><input type="radio" name="q2" value="b"> b) Fish</label>
+                <label><input type="radio" name="q2" value="c"> c) Elephant</label><br><br>
+                <p>Question 3:What is the capital of France?</p>
+            
+                    <label><input type="radio" name="q1" value="London">a) London</label>
+                    <label><input type="radio" name="q1" value="Berlin">b) Berlin</label>
+                    <label><input type="radio" name="q1" value="Paris">c) Paris</label>
+                    <label><input type="radio" name="q1" value="Madrid">d) Madrid</label><br><br>
+                
+                
+                
+                <p>Question 4:Which planet is known as the Red Planet?</p>
+                
+                    <label><input type="radio" name="q2" value="Mars"> a)Mars</label>
+                    <label><input type="radio" name="q2" value="Venus"> b)Venus</label>
+                    <label><input type="radio" name="q2" value="Earth">c) Earth</label>
+                    <label><input type="radio" name="q2" value="Jupiter">d) Jupiter</label><br><br>
+                    <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+            <div id="section2" class="quiz-section">
+                <h2>Section 2: True or False</h2>
+                <p>Question 1: The Earth is flat. (True/False)</p>
+                <label><input type="radio" name="q3" value="true"> True</label>
+                <label><input type="radio" name="q3" value="false"> False</label><br><br>
+            
+                <p>Question 2: Water boils at 100 degrees Celsius. (True/False)</p>
+                <label><input type="radio" name="q4" value="true"> True</label>
+                <label><input type="radio" name="q4" value="false"> False</label><br><br>
+                <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+            
+            <div id="section3" class="quiz-section">
+                <h2>Section 3: Short Answers</h2>
+                <p>Question 1: Name a primary color.</p>
+                <input type="text" name="q5"><br><br>
+            
+                <p>Question 2: What is the capital of Japan?</p>
+                <input type="text" name="q6"><br><br>
+                <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+            
+            <div id="section4" class="quiz-section">
+                <h2>Section 4: Long Answers</h2>
+                <p>Question 1: Explain the process of photosynthesis.</p>
+                <textarea name="q7" rows="4" cols="50"></textarea><br><br>
+            
+                <p>Question 2: Describe the impact of climate change on the environment.</p>
+                <textarea name="q8" rows="4" cols="50"></textarea><br><br>
+                <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+            
+            <div id="section5" class="quiz-section">
+                <h2>Section 5: Match the Following</h2>
+                <p>Match the countries with their capitals:</p><br>
+                <ol>
+                    <p>1.France - <input type="text" name="q10">a.Berlin</p><br>
+                    <p>2.Germany - <input type="text" name="q10">b.Madrid</p><br>
+                    <p>3.Spain - <input type="text" name="q11">c.Paris</p><br>
+                </ol>
+                <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+            
+            <div id="section6" class="quiz-section">
+                <h2>Section 6: Reasoning</h2>
+                <p>Question 1: Provide a reason why recycling is important for the environment.</p>
+                <textarea name="q12" rows="4" cols="50"></textarea><br><br>
+            
+                <p>Question 2: Explain the concept of supply and demand in economics.</p>
+                <textarea name="q13" rows="4" cols="50"></textarea><br><br>
+                <button class="check-answers">Check Answers</button>
+    <div class="feedback"></div>
+                
+            </div>
+        
+
+    
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
